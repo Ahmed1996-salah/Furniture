@@ -18,6 +18,7 @@
     <!-- Fonts Files -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
   </head>
+
   <body>
     <!-- Start Header -->
     <header>
@@ -26,11 +27,8 @@
           <img src="images/logo.png" alt="" />
           <nav>
             <ul class="list">
-              <li><a class="item" href="#home">Home</a></li>
-              <li><a class="item" href="#about">About</a></li>
-              <li><a class="item" href="#features">Features</a></li>
               <li class="dropdown">
-                <a class="item" href="#services">More</a>
+                <a class="item" href="#home">home</a>
                 <div class="dropdown-menu">
                   <ul class="list">
                     <li><a href="#">table1</a></li>
@@ -55,15 +53,19 @@
                   </ul>
                 </div>
               </li>
-              <li><a class="item" href="#portfolio">Portfolio</a></li>
-              <li><a class="item" href="#contact">Contact Us</a></li>
+              <li><a class="item" href="#about">About</a></li>
+              <li><a class="item" href="#features">features</a></li>
+              <li><a class="item" href="#services">services</a></li>
+
+              <li><a class="item" href="#portfolio">portfolio</a></li>
+              <li><a class="item" href="#contact">contact us</a></li>
             </ul>
           </nav>
           <div class="login">
             <ul class="list">
               <li><i class="fa fa-search"></i></li>
               <li><i class="fa fa-user"></i></li>
-              <li><i class="icon fa fa-cart-plus"></i>Your Bag</li>
+              <li><i class="icon fa fa-cart-plus"></i> your bag</li>
             </ul>
           </div>
         </div>
@@ -78,6 +80,51 @@
       </div>
     </section>
     <!-- End Home -->
+
+    <!-- Start Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="header">
+        <h2 class="title">Portfolio Category</h2>
+        <span class="line"></span>
+      </div>
+      <!-- /section-header -->
+      <div class="container">
+        <div class="portfolio-items">
+          <div class="item 1">
+            <img src="images/category-banner1.jpg" alt="this is image" />
+            <h4 class="item-sub">Most Popular</h4>
+            <h2 class="item-title">Modern Chair Collection</h2>
+            <i class="icon fa fa-angle-right fa-2x"></i>
+          </div>
+          <!-- /category-item -->
+          <div class="item 2">
+            <img src="images/category-banner2.jpg" alt="this is image" />
+            <h4 class="item-sub">Most Popular</h4>
+            <h2 class="item-title">Modern Chair Collection</h2>
+            <i class="icon fa fa-angle-right fa-2x"></i>
+          </div>
+          <!-- /category-item -->
+          <div class="item 3">
+            <img src="images/category-banner3.jpg" alt="this is image" />
+            <h4 class="item-sub">Most Popular</h4>
+            <h2 class="item-title">Modern Chair Collection</h2>
+            <i class="icon fa fa-angle-right fa-2x"></i>
+          </div>
+          <!-- /category-item -->
+          <div class="item 4">
+            <img src="images/category-banner4.jpg" alt="this is image" />
+            <h4 class="item-sub">Most Popular</h4>
+            <h2 class="item-title">Modern Chair Collection</h2>
+            <i class="icon fa fa-angle-right fa-2x"></i>
+          </div>
+          <!-- /category-item -->
+        </div>
+        <!-- /category-items -->
+      </div>
+
+      <!-- /container -->
+    </section>
+    <!-- End Portfolio -->
 
     <!-- Start About -->
     <section class="about" id="about">
@@ -126,6 +173,60 @@
     </section>
     <!-- End About -->
 
+    <!-- Start Services -->
+    <section class="services" id="services">
+      <div class="header">
+        <h2 class="title">Services</h2>
+        <span class="line"></span>
+      </div>
+
+      <div class="container">
+        <div class="services-content">
+          <div class="services-item">
+            <div class="icon icon-1"></div>
+            <div class="info">
+              <h3>Free Delivery</h3>
+              <span>Free Shipping On All Order</span>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="icon icon-2"></div>
+            <div class="info">
+              <h3>Free Delivery</h3>
+              <span>Free Shipping On All Order</span>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="icon icon-3"></div>
+            <div class="info">
+              <h3>Free Delivery</h3>
+              <span>Free Shipping On All Order</span>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="icon icon-4"></div>
+            <div class="info">
+              <h3>Free Delivery</h3>
+              <span>Free Shipping On All Order</span>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="icon icon-5"></div>
+            <div class="info">
+              <h3>Free Delivery</h3>
+              <span>Free Shipping On All Order</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <!-- End Services -->
+
     <!-- Start Features  -->
     <section class="features" id="features">
       <div class="header">
@@ -135,10 +236,18 @@
 
       <div class="container">
         <ul class="features-list">
-          <button><li>Wooden Chair</li></button>
-          <button><li>Plastic Chair</li></button>
-          <button><li>Study Table</li></button>
-          <button><li>Armoires</li></button>
+          <button>
+            <li>Wooden Chair</li>
+          </button>
+          <button>
+            <li>Plastic Chair</li>
+          </button>
+          <button>
+            <li>Study Table</li>
+          </button>
+          <button>
+            <li>Armoires</li>
+          </button>
         </ul>
         <div class="features-items">
           <div class="item">
@@ -297,105 +406,6 @@
     </section>
     <!-- End Features -->
 
-    <!-- Start Services -->
-    <section class="services" id="services">
-      <div class="header">
-        <h2 class="title">Services</h2>
-        <span class="line"></span>
-      </div>
-
-      <div class="container">
-        <div class="services-content">
-          <div class="services-item">
-            <div class="icon icon-1"></div>
-            <div class="info">
-              <h3>Free Delivery</h3>
-              <span>Free Shipping On All Order</span>
-            </div>
-          </div>
-
-          <div class="services-item">
-            <div class="icon icon-2"></div>
-            <div class="info">
-              <h3>Free Delivery</h3>
-              <span>Free Shipping On All Order</span>
-            </div>
-          </div>
-
-          <div class="services-item">
-            <div class="icon icon-3"></div>
-            <div class="info">
-              <h3>Free Delivery</h3>
-              <span>Free Shipping On All Order</span>
-            </div>
-          </div>
-
-          <div class="services-item">
-            <div class="icon icon-4"></div>
-            <div class="info">
-              <h3>Free Delivery</h3>
-              <span>Free Shipping On All Order</span>
-            </div>
-          </div>
-
-          <div class="services-item">
-            <div class="icon icon-5"></div>
-            <div class="info">
-              <h3>Free Delivery</h3>
-              <span>Free Shipping On All Order</span>
-            </div>
-          </div>
-        </div>
-        <hr />
-      </div>
-    </section>
-    <!-- End Services -->
-
-    <!-- Start Portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="header">
-        <h2 class="title">Portfolio Category</h2>
-        <span class="line"></span>
-      </div>
-      <!-- /section-header -->
-      <div class="container">
-        <div class="portfolio-items">
-          <div class="item 1">
-            <img src="images/category-banner1.jpg" alt="this is image" />
-            <h4 class="item-sub">Most Popular</h4>
-            <h2 class="item-title">Modern Chair Collection</h2>
-            <i class="icon fa fa-angle-right fa-2x"></i>
-          </div>
-          <!-- /category-item -->
-          <div class="item 2">
-            <img src="images/category-banner2.jpg" alt="this is image" />
-            <h4 class="item-sub">Most Popular</h4>
-            <h2 class="item-title">Modern Chair Collection</h2>
-            <i class="icon fa fa-angle-right fa-2x"></i>
-          </div>
-          <!-- /category-item -->
-          <div class="item 3">
-            <img src="images/category-banner3.jpg" alt="this is image" />
-            <h4 class="item-sub">Most Popular</h4>
-            <h2 class="item-title">Modern Chair Collection</h2>
-            <i class="icon fa fa-angle-right fa-2x"></i>
-          </div>
-          <!-- /category-item -->
-          <div class="item 4">
-            <img src="images/category-banner4.jpg" alt="this is image" />
-            <h4 class="item-sub">Most Popular</h4>
-            <h2 class="item-title">Modern Chair Collection</h2>
-            <i class="icon fa fa-angle-right fa-2x"></i>
-          </div>
-          <!-- /category-item -->
-        </div>
-        <!-- /category-items -->
-      </div>
-
-      <!-- /container -->
-    </section>
-    <!-- End Portfolio -->
-
     <!-- Start Footer -->
     <footer class="footer" id="contact">
       <div class="container">
@@ -446,7 +456,6 @@
         </div>
       </div>
     </footer>
-
     <!-- End Footer -->
 
     <div class="copyright">

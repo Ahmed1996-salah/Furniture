@@ -84,6 +84,7 @@ header .header-main ul li {
 header .header-main ul li a,
 header .header-main ul li a {
     color: var(--static-color);
+    text-transform: capitalize;
 }
 
 header .header-main nav ul li .item {
@@ -137,6 +138,7 @@ header .header-main .login ul li {
     padding: 5px;
     font-weight: bold;
     font-size: 25px;
+    text-transform: capitalize;
 }
 
 header .header-main .login ul li:last-child i {
@@ -205,6 +207,60 @@ section.banner img {
     width: 100%;
 }
 
+
+/* ================================================================================
+                    Section PORTFOLIO
+=================================================================================== */
+.portfolio {
+    padding: 40px 0;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    cursor: pointer;
+}
+
+.portfolio-items img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.item-sub {
+    color: gray;
+    font-weight: normal;
+}
+
+.item-title {
+    font-size: 19px;
+}
+
+.item {
+    position: relative;
+}
+
+.item .icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--row-color);
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s all;
+    cursor: pointer;
+}
+
+.item:hover .icon {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* ================================================================================
                         About Section
@@ -297,6 +353,91 @@ section.banner img {
     cursor: pointer;
     transition: 0.5s all;
 }
+
+
+/* ================================================================================
+                    Section SERVICES
+===================================================================================  */
+.services {
+    padding: 40px 0;
+}
+
+.services-content {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.services-item {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid var(--static-color);
+    cursor: pointer;
+}
+
+.services-item:last-child {
+    border: 0;
+}
+
+.services-item .info h3 {
+    font-size: 17px;
+}
+
+.services-item .info span {
+    color: var(--gray-color);
+    font-size: 15px;
+}
+
+.services-item .icon {
+    height: 55px;
+    background-image: url(../images/service-icon.png);
+    background-repeat: no-repeat;
+}
+
+.icon-1 {
+    background-position: center 5px;
+    transition: 0.5s all;
+}
+
+.services-item:hover .icon-1 {
+    background-position: center -80px;
+}
+
+.icon-2 {
+    background-position: center -180px;
+    transition: 0.5s all;
+}
+
+.services-item:hover .icon-2 {
+    background-position: center -270px;
+}
+
+.icon-3 {
+    background-position: center -360px;
+    transition: 0.5s all;
+}
+
+.services-item:hover .icon-3 {
+    background-position: center -450px;
+}
+
+.icon-4 {
+    background-position: center -550px;
+    transition: 0.5s all;
+}
+
+.services-item:hover .icon-4 {
+    background-position: center -640px;
+}
+
+.icon-5 {
+    background-position: center -730px;
+    transition: 0.5s all;
+}
+
+.services-item:hover .icon-5 {
+    background-position: center -820px;
+}
+
 
 /* ================================================================================
                 section FEATURES
@@ -397,145 +538,6 @@ section.banner img {
 .features-items .info i {
     margin-top: 10px;
     cursor: pointer;
-}
-
-/* ================================================================================
-                    Section SERVICES
-===================================================================================  */
-.services {
-    padding: 40px 0;
-}
-
-.services-content {
-    display: flex;
-    margin-bottom: 55px;
-}
-
-.services-item {
-    flex: 1;
-    text-align: center;
-    border-right: 1px solid var(--static-color);
-    cursor: pointer;
-}
-
-.services-item:last-child {
-    border: 0;
-}
-
-.services-item .info h3 {
-    font-size: 17px;
-}
-
-.services-item .info span {
-    color: var(--gray-color);
-    font-size: 15px;
-}
-
-.services-item .icon {
-    height: 55px;
-    background-image: url(../images/service-icon.png);
-    background-repeat: no-repeat;
-}
-
-.icon-1 {
-    background-position: center 5px;
-    transition: 0.5s all;
-}
-
-.services-item:hover .icon-1 {
-    background-position: center -80px;
-}
-
-.icon-2 {
-    background-position: center -180px;
-    transition: 0.5s all;
-}
-
-.services-item:hover .icon-2 {
-    background-position: center -270px;
-}
-
-.icon-3 {
-    background-position: center -360px;
-    transition: 0.5s all;
-}
-
-.services-item:hover .icon-3 {
-    background-position: center -450px;
-}
-
-.icon-4 {
-    background-position: center -550px;
-    transition: 0.5s all;
-}
-
-.services-item:hover .icon-4 {
-    background-position: center -640px;
-}
-
-.icon-5 {
-    background-position: center -730px;
-    transition: 0.5s all;
-}
-
-.services-item:hover .icon-5 {
-    background-position: center -820px;
-}
-
-
-/* ================================================================================
-                    Section PORTFOLIO
-=================================================================================== */
-
-.portfolio {
-    padding: 40px 0;
-}
-
-.portfolio-items {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto auto auto auto;
-    cursor: pointer;
-}
-
-.portfolio-items img {
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-.item-sub {
-    color: gray;
-    font-weight: normal;
-}
-
-.item-title {
-    font-size: 19px;
-}
-
-.item {
-    position: relative;
-}
-
-.item .icon {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-color: var(--row-color);
-    color: #fff;
-    text-align: center;
-    line-height: 30px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.1s all;
-    cursor: pointer;
-}
-
-.item:hover .icon {
-    opacity: 1;
-    visibility: visible;
 }
 
 /* ============================================================================ 
